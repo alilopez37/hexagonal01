@@ -7,7 +7,7 @@ export class NotificationNewProduct implements INotificationNewProduct {
   private options: any;
   private url: any;
   private exch: any;
-  private server: any;
+  //private server: any;
 
   constructor() {
     this.options = {
