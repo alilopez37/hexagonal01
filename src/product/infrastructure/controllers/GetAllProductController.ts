@@ -5,7 +5,7 @@ import { GetAllProductUseCase } from "../../application/GetAllProductUseCase";
 export class GetAllProductController {
   constructor(readonly getAllProductUseCase: GetAllProductUseCase) {}
 
-  async run(req: Request, res: Response) {
+  async run(req: Request, res: Response): Promise<void> {
     try {
       const products = await this.getAllProductUseCase.run();
       console.log(products);

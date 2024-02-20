@@ -1,8 +1,10 @@
 import express from "express";
 
-import { createProductController } from "./dependencies";
-import { getAllProductController } from "./dependencies";
-import { getByIdProductController } from "./dependencies";
+import {
+  createProductController,
+  getAllProductController,
+  getByIdProductController,
+} from "./dependencies";
 
 export const productRouter = express.Router();
 

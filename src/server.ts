@@ -1,4 +1,5 @@
 import express from "express";
+import morgan from "morgan";
 import { Signale } from "signale";
 
 import { loadRouter } from "./event/LoadRouter";
@@ -9,6 +10,7 @@ const app = express();
 const signale = new Signale();
 
 app.use(express.json());
+app.use(morgan("dev"));
 app.use("/products", productRouter);
 app.use("/load", loadRouter);
 
