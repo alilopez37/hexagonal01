@@ -19,7 +19,7 @@ export class NotificationNewProduct implements INotificationNewProduct {
     this.url = process.env.AMQP_URL;
     this.exch = process.env.AMQP_EXCH;
     //Options solo para cloudamqp
-    this.server = process.env.AMQP_SERVER;
+    //this.server = process.env.AMQP_SERVER;
   }
 
   async sendNotification(product: Product): Promise<boolean> {
